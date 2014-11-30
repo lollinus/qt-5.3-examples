@@ -19,6 +19,8 @@ SUBDIRS = \
     widgets \
     xml
 
+freebsd:LIBS += /usr/local/lib
+
 aggregate.files = aggregate/examples.pro
 aggregate.path = $$[QT_INSTALL_EXAMPLES]
 readme.files = README

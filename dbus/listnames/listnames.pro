@@ -6,3 +6,5 @@ SOURCES += listnames.cpp
 
 target.path = $$[QT_INSTALL_EXAMPLES]/dbus/listnames
 INSTALLS += target
+
+freebsd:LIBS += /usr/local/lib
