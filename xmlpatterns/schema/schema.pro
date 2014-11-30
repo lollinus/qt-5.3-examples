@@ -8,5 +8,10 @@ INCLUDEPATH += ../shared/
 target.path = $$[QT_INSTALL_EXAMPLES]/xmlpatterns/schema
 INSTALLS += target
 
+freebsd {
+	LIBS += -L/usr/local/lib
+	QMAKE_INCDIR_OPENGL = /usr/local/include
+}
+
 maemo5: CONFIG += qt_example
 

@@ -11,3 +11,5 @@ INSTALLS += target
 
 maemo5: CONFIG += qt_example
 
+freebsd:QMAKE_INCDIR_OPENGL = /usr/local/include
+freebsd:LIBS += -L/usr/local/lib

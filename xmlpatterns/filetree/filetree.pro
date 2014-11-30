@@ -8,6 +8,7 @@ INCLUDEPATH += ../shared/
 target.path = $$[QT_INSTALL_EXAMPLES]/xmlpatterns/filetree
 INSTALLS += target
 
+freebsd:LIBS += -L/usr/local/lib
 maemo5: CONFIG += qt_example
 
 maemo5: warning(This example might not fully work on Maemo platform)
